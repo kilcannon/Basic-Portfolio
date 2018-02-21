@@ -1,0 +1,148 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 16px;
+  line-height: 150%;f
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: black;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  color: cadetblue;
+}
+
+h3 {
+  font-size: 16px;
+  color: cadetblue;
+}
+
+.inner-section {
+  background-image: url("C:\Users\scott\Documents\GitHub\Basic-Portfolio\assets\images");
+  background-color: lightgrey;
+  min-height: 600px;
+}
+
+.smaller-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#main-bio,
+#icon-bucket,
+#bio-image {
+  float: left;
+  background-color: white;
+  padding: 10px;
+}
+
+#main-bio {
+  width: 580px;
+  padding-right: 25px;
+  padding-left: 15px;
+  margin-right: 25px;
+  margin-top: 25px;
+  float: left;
+}
+
+#icon-bucket {
+  width: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 35px;
+  margin-top: 25px;
+  float: right;
+}
+
+#primary-name {
+  width: 480px;
+  float: left;
+}
+
+#site-links {
+  width: 480px;
+  float: right;
+}
+
+#bio-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.topNavHome {
+    overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto;
+    font-color: white;
+}
+
+.topNavHome a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#homeName {
+  background-color: cadetblue;
+  color: white;
+  font-size: 36px;
+  float: left;
+  padding: 10px;
+}
+
+a {
+  color: grey !important;
+  text-decoration: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 5px;
+    list-style: none;
+    font-size: 12px;
+    font-color: black;
+    float: right;
+    text-align: center;
+}
+
+ nav li a {
+    display: block;
+    font-color: black;
+    margin-right: 0;   /* space between links */
+    width: auto;   /* adjust width as needed or use auto */
+    padding: 6px;
+    font-weight: bold;
+    line-height: 2px;
+    border-left: 1px solid lightgrey;
+}
+
+/**remove from last item**/
+nav li:last-child a {
+    border: none;
+}
+
+/**float clearing**/
+nav:after {
+     content: '';
+     clear:right;
+     display:block;
+}
+
+hr { 
+    border: 0;
+    height: 0;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
