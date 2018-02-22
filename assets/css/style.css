@@ -83,17 +83,15 @@ h3 {
 
 .topNavHome {
     overflow: hidden;
-    max-width: 960px;
+    max-width: 960px; /* ensures navigation bar matches width of the main page body */
     margin: 0 auto;
     font-color: white;
-    border-bottom-width: 2px;
-    border-bottom-color: lightgrey;
 }
 
 .topNavHome a {
     float: left;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
 }
 
 #homeName {
@@ -105,15 +103,19 @@ h3 {
 }
 
 a:link {
+  text-decoration: none;
+}
+
+a:link#nav-link {
   color: grey;
   text-decoration: none;
 }
 
-a:visited {
+a:visited#nav-link {
   color: grey;
 }
 
-a:hover {
+a:hover#nav-link {
   color: white;
   background-color: cadetblue;
 }
@@ -148,13 +150,14 @@ nav li:last-child a {
     border: none;
 }
 
-/**float clearing**/
+/* float clearing */
 nav:after {
      content: '';
      clear:right;
      display:block;
 }
 
+/* changes horizontal braks to be grey and matching desired example */
 #body-break { 
     border: 0;
     height: 0;
@@ -170,7 +173,6 @@ nav:after {
     border-top: 3px solid cadetblue;
 }
 
-
 .footer {
     position: fixed;
     left: 0;
@@ -182,4 +184,40 @@ nav:after {
     color: white;
     text-align: center;
     line-height: 25px /* moves the text to be in the vertical center of footer height */
+}
+
+#contact-form {
+  background-color: white;
+  width: 610px;
+  padding-right: 25px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  margin-right: 25px;
+  margin-top: 25px;
+  float: left;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    margin-bottom: 15px; 
+    resize: vertical /* Allow the user to vertically resize the textarea */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: cadetblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+}
+
+/* Hover color darkening on submit button*/
+input[type=submit]:hover {
+    background-color: teal;
 }
